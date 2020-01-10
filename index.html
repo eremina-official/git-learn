@@ -12,5 +12,9 @@
   <p>This is a change on branch test-two, commited.</p>
   <p>This is a change on branch master, commited.</p>
   <p>This is a change on branch test-two, commited. This change leads to a merge conflict with branch master, because the changes are made in the same places in the file.</p>
+
+  <p>Changes that are not commited are visible on all branches.</p>
+  <p>If the file has uncommited changes on two branches, git won't allow switching branches unless the changes are removed or stashed on the branch you are currently on. If you force switching branches with -f flag, all uncommited changes on the branch you switch to will be lost.</p>
+  <p>If there is a merge conflict because a change was made and commited on the same line in a file, to resolve merge conflict manually delete lines with 'current changes' and 'incoming changes' in the appeared editor, then add the file to the staging area and commit changes.</p>
 </body>
 </html>
